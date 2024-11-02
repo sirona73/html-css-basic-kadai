@@ -1,0 +1,146 @@
+/*===============
+SP向けのレイアウト
+==================*/
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  #nav-pc {
+    display: none;
+  }
+
+  #menu-sp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    padding: 0;
+  }
+
+  #nav-sp {
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  #nav-sp ul {
+    padding-left: 0;
+  }
+
+  #nav-sp li {
+    list-style: none;
+  }
+
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #logo-sp {
+    margin: 80px 0px 30px 20px
+  }
+
+  #nav-sp a {
+    display: block;
+  }
+
+  #nav-sp a:link {
+    color: #ffffff;
+  }
+
+  #nav-sp a:visited {
+    color: #ffffff;
+  }
+
+  #nav-sp a:hover {
+    text-decoration: underline;
+  }
+
+  #nav-sp a:active {
+    color:#ffffff;
+  }
+
+  #nav-sp .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("./image/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  #main-image {
+    position: relative;
+    width: 100%;
+  }
+}
+
+/*==================
+　PC用
+====================*/
+@media screen and (min-width: 768px) {
+  #menu-sp {
+    display: none;
+  }
+
+  #nav-sp {
+    display: none;
+  }
+
+  /* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PC用ナビゲーションスタイル */
+body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#img-logo {
+  text-align: left;
+  margin: 10px 0;
+}
+
+#nav-pc ul {
+  display: inline-block;
+  padding: 0;
+}
+
+#nav-pc li {
+  list-style: none;
+  display: inline-block;
+  padding:20px 30px 20px 0;
+}
+
+#nav-pc a:link {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+#main-image {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+}

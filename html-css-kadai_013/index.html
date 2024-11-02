@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Organic Cafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <!--PC用-->
+        <!--ロゴ-->
+        <div id="img-logo">
+          <img src="./image/logo.png" alt="オレンジ色のロゴ">
+        </div>
+        
+        <!--PC用ナビゲーション-->
+        <div id="nav-pc">
+          <nav>
+            <li><a href="index.html#CONCECT">CONCEPT</a></li>
+            <li><a href="index.html#PRODUCT">PRODUCT</a></li>
+            <li><a href="index.html#CONTACT">CONTACT</a></li>
+          </nav>
+        </div>
+
+        <!--スマートフォン向けのハンバーガーメニュー画像を追加-->
+        <img id="menu-sp" src="./image/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+        <!--SP用のナビゲーションを追加する-->
+        <nav id="nav-sp">
+          <ul>
+            <!--閉じるボタン-->
+            <li><img id="close" src="./image/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'"></li>
+            <!--ロゴ-->
+            <li><a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="./image/logo-sp.png" alt="トップページに戻る"></a></li>
+          
+            <li><a class="menu" href="index.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a></li>
+            <li><a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
+            <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+          </ul>
+        </nav>
+    </header>
+  
+    <main>
+      <article>
+        <section id="main-style">
+          <h3>Organic Cafe</h3>
+          <p>自家焙煎コーヒーが買えるお店</p>
+          <img id="main-image" src="./image/main-image.jpg" alt="コーヒーを注ぐ">
+        </section>
+      </article>
+    </main>
+  </body>
+    
+</html>
